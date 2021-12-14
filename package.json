@@ -1,0 +1,22 @@
+{
+  "name": "canvas",
+  "version": "1.0.0",
+  "description": "canvas demo",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wild-bit/canvas.git"
+  },
+  "keywords": [
+    "canvasss"
+  ],
+  "author": "wild",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wild-bit/canvas/issues"
+  },
+  "homepage": "https://github.com/Wild-bit/canvas#readme"
+}
