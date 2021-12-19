@@ -1,0 +1,1 @@
+import ShapeCanvas from './canvas/shape'
