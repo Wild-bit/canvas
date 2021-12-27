@@ -2,9 +2,10 @@
   "name": "canvas",
   "version": "1.0.0",
   "description": "canvas demo",
-  "main": "index.ts",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/Wild-bit/canvas/issues"
   },
-  "homepage": "https://github.com/Wild-bit/canvas#readme"
+  "homepage": "https://github.com/Wild-bit/canvas#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
