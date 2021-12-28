@@ -1,13 +1,13 @@
 const path = require('path')
 
 module.exports = {
-    entry:'./src/index.ts',
+    entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: "bundle.js"
     },
-      // 配置模块规则
-      module: {
+    // 配置模块规则
+    module: {
         rules: [
             {
                 test: /\.tsx?$/,    // .ts或者tsx后缀的文件，就是typescript文件
@@ -16,6 +16,12 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        alias: {
+            "COMMON": path.resolve(__dirname, 'common/')
+        },
+    },
+
     // 模式
     mode: "development",
 }

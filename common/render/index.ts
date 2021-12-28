@@ -1,21 +1,29 @@
-import Canvas from "../canvas";
+import Canvas from "COMMON/canvas";
 
-abstract class  renderCanvasInstances {
-    el:HTMLDivElement
+abstract class  renderCanvasInstances extends Canvas {
+    // el:HTMLDivElement
     moduleName:string
-    canvasInstances:Canvas[]
+    // canvasInstances:Canvas[]
 
     constructor(moduleName:string) {
-        this.canvasInstances = []
+        // this.canvasInstances = []
+        super()
         this.moduleName = moduleName
-        this.el = document.createElement('div')
+        this.container = document.createElement('div')
     }
-    renderCanvas(){
-        let count = this.canvasInstances.length
-        
-    }
+    // renderCanvas(){
+    //     let count = this.canvasInstances.length
+    //     this.el.style.width = '500px'
+    //     this.el.style.height = '500px'
+    //     this.el.style.border = '1px soild #dedede'
+    //     Canvas.
+    // }
     render(){
-        this.el.innerHTML = ''
-        document.body.appendChild(this.el)
+        this.container.innerHTML = ''
+        this.container.style.width = '500px'
+        this.container.style.height = '500px'
+        this.container.style.border = '1px soild #dedede'
+        super.render(this.container)
     }
 }
+export default renderCanvasInstances

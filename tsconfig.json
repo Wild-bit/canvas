@@ -5,6 +5,9 @@
       "module": "es6",
       "target": "es2015",
       "allowJs": true,
-      "moduleResolution": "node"
-    }
+      "moduleResolution": "node",
+      "paths": {
+        "COMMON/*":["./common/*"]
+      }
+    },
   }
