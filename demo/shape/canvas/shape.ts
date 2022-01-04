@@ -31,9 +31,9 @@ class ShapeCanvas extends Canvas {
         // 绘制三角形
         // let triangle = 
         ctx.beginPath()
-        ctx.moveTo(75,50)
-        ctx.lineTo(100,75)
-        ctx.lineTo(100,25)
+        ctx.moveTo(100,50)
+        ctx.lineTo(50,100)
+        ctx.lineTo(50,50)
         ctx.closePath();
         ctx.stroke();
     }

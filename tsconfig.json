@@ -5,6 +5,7 @@
       "module": "es6",
       "target": "es2015",
       "allowJs": true,
+      "jsx": "react",
       "moduleResolution": "node",
       "paths": {
         "COMMON/*":["./common/*"]
