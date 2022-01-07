@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "compiler": "babel src -o script-compiled.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,11 @@
   },
   "homepage": "https://github.com/Wild-bit/canvas#readme",
   "devDependencies": {
+    "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime-corejs3": "^7.16.7",
     "babel-loader": "^8.2.3",
     "html-webpack-plugin": "^5.5.0",
     "ts-loader": "^9.2.6",
@@ -34,6 +37,7 @@
     "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.7",
     "clean-webpack-plugin": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
