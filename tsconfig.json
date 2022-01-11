@@ -3,12 +3,19 @@
       "outDir": "./build/",
       "noImplicitAny": true,
       "module": "es6",
-      "target": "es2015",
+      "target": "es5",
       "allowJs": true,
       "jsx": "react",
       "moduleResolution": "node",
+      "allowSyntheticDefaultImports":true,
       "paths": {
         "COMMON/*":["./common/*"]
       }
     },
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
   }

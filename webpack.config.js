@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: path.join(__dirname, './src/index.tsx'),
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: "bundle.js"
@@ -19,6 +19,7 @@ module.exports = {
         compress: true,
         hot: true, //热更新
         port: 9001,// 端口号
+        host: 'localhost',
     },
     // 配置模块规则
     module: {
@@ -29,18 +30,21 @@ module.exports = {
                 exclude: "/node-modules/" // 排除node-modules目录
             },
             {
-                test: /\.m?js$/,
+                test: /\.(j|t)sx?$/,
                 exclude: "/node-modules/",
                 use: {
                     loader: "babel-loader",
                 }
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'canvas',
             filename: 'index.html',
             template: 'public/index.html',
             inject: true
