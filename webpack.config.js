@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { webpack } = require('webpack');
 
 module.exports = {
     entry: path.join(__dirname, './src/index.tsx'),
@@ -37,8 +38,9 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/i,
-                use: ["style-loader", "css-loader"]
+                test: /\.scss$/,
+                exclude: "/node_modules/",
+                use: ["style-loader", "css-loader", "sass-loader"]
             }
         ]
     },
@@ -48,7 +50,7 @@ module.exports = {
             filename: 'index.html',
             template: 'public/index.html',
             inject: true
-        })
+        }),
     ],
     resolve: {
         extensions: ['.ts', '.js', '.tsx'],
