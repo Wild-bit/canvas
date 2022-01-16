@@ -1,4 +1,4 @@
 # 设置git提交忽视文件
 .DS_Store
 node_modules
-dist
+build
