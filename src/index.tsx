@@ -9,6 +9,6 @@ import './index.scss'
 
 const App = () => {
   return <div className="app">hello world</div>
-};
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
