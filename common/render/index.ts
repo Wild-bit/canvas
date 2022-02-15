@@ -1,4 +1,4 @@
-import Canvas from '../canvas'
+import Canvas from 'COMMON/canvas'
 
 abstract class renderCanvasInstances extends Canvas {
   wrap: HTMLDivElement

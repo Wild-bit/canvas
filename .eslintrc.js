@@ -5,10 +5,10 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'prettier',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser', //解析器，将 TypeScript 转换成与 estree 兼容的形式，以便在ESLint中使用
   parserOptions: {

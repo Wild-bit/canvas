@@ -1,4 +1,4 @@
-import renderCanvasInstances from '../../common/render'
+import renderCanvasInstances from 'COMMON/render/index'
 import ShapeCanvas from './canvas/shape'
 
 const moduleName = 'shape'

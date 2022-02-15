@@ -7,14 +7,17 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports":true,
+    "allowSyntheticDefaultImports": true,
+    // "sourceMap":true
+    "baseUrl": ".",
     "paths": {
-      // "COMMON/*":["common/*"]
-      "@common/*":["./commom/*"]
+      "COMMON/*":  ["common/*"]
     }
   },
   "include": [
-    "src"
+    "src",
+    "common/**/*.ts",
+    "src/**/*.ts",
   ],
   "exclude": [
     "node_modules"
